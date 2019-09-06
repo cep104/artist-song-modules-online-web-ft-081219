@@ -1,7 +1,8 @@
 require 'pry'
 # require_relative '../lib/concerns/memorable'
 class Artist
-  extend Memorable
+  Memorable::InstanceMethods
+  Memorable::ClassMethods
   extend Findable
   include Paramable
   attr_accessor :name
